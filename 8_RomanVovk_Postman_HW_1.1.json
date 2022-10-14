@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "6a4f7850-baa8-4291-9404-54aeadbc959c",
+		"name": "4_1_API Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "162.55.220.72:5005",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005"
+				}
+			},
+			"response": [
+                "Roman",
+                "24"
+            ]
+		},
+		{
+			"name": "EP_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "NaMe",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": [
+                {
+                "age": "24",
+                "family": {
+                    "children": [
+                        [
+                            "Alex",
+                            24
+                        ],
+                        [
+                            "Kate",
+                            12
+                        ]
+                    ],
+                    "u_salary_1_5_year": 8000
+                },
+                "name": "Roman",
+                "salary": 2000
+            }
+        ]
+		},
+		{
+			"name": "EP_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_1?age=35&weight=1&name=imya",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "35"
+						},
+						{
+							"key": "weight",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "imya"
+						}
+					]
+				}
+			},
+			"response": [
+                {
+                "age": 24,
+                "daily_food": 0.924,
+                "daily_sleep": 192.5,
+                "name": "Roman"
+            }
+        ]
+		},
+		{
+			"name": "EP_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Imya&age=32&salary=1",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Imya"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "salary",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+                {
+                "person": {
+                    "u_age": 24,
+                    "u_name": [
+                        "Roman",
+                        2000,
+                        24
+                    ],
+                    "u_salary_5_years": 8400.0
+                },
+                "qa_salary_after_1.5_year": 6600.0,
+                "qa_salary_after_12_months": 5400.0,
+                "qa_salary_after_3.5_years": 7600.0,
+                "qa_salary_after_6_months": 4000,
+                "start_qa_salary": 2000
+            }
+        ]
+		},
+		{
+			"name": "EP_5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Imya&age=32&salary=1000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Imya"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "salary",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": [
+                {
+                    "age": "24",
+                    "family": {
+                        "children": [
+                            [
+                                "Alex",
+                                24
+                            ],
+                            [
+                                "Kate",
+                                12
+                            ]
+                        ],
+                        "pets": {
+                            "cat": {
+                                "age": 3,
+                                "name": "Sunny"
+                            },
+                            "dog": {
+                                "age": 4,
+                                "name": "Luky"
+                            }
+                        },
+                        "u_salary_1_5_year": 8000
+                    },
+                    "name": "Roman",
+                    "salary": 2000
+                }
+            ]
+		},
+		{
+			"name": "EP_6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_4?name=name&age=32&salary=1000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "name"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "salary",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": [
+                {
+                    "age": 24,
+                    "name": "Roman",
+                    "salary": [
+                        2000,
+                        "4000",
+                        "6000"
+                    ]
+                }
+            ]
+		},
+		{
+			"name": "EP_7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Imya",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": [
+                {
+                    "person": {
+                        "u_age": 24,
+                        "u_name": [
+                            "Roman",
+                            2000,
+                            24
+                        ],
+                        "u_salary_5_years": 8400.0
+                    },
+                    "qa_salary_after_1.5_year": 6600.0,
+                    "qa_salary_after_12_months": 5400.0,
+                    "qa_salary_after_3.5_years": 7600.0,
+                    "qa_salary_after_6_months": 4000,
+                    "start_qa_salary": 2000
+                }
+            ]
+		}
+	]
+}
